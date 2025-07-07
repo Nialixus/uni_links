@@ -81,6 +81,7 @@ public class UniLinksPlugin
     }
 
     /** Plugin registration. */
+    /** Obsolete
     public static void registerWith(@NonNull PluginRegistry.Registrar registrar) {
         // Detect if we've been launched in background
         if (registrar.activity() == null) {
@@ -94,6 +95,7 @@ public class UniLinksPlugin
         instance.handleIntent(registrar.context(), registrar.activity().getIntent());
         registrar.addNewIntentListener(instance);
     }
+    **/
 
     @Override
     public void onDetachedFromEngine(@NonNull FlutterPluginBinding flutterPluginBinding) {}
